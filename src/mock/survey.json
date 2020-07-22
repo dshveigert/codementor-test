@@ -1,0 +1,22 @@
+[
+  {
+    "q": "How many planets are in our Solar System?",
+    "a": "Eight: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune"
+  },
+  {
+    "q": "How old is the Sun?",
+    "a": "4.603 billion years"
+  },
+  {
+    "q": "How many natural satellites does Earth have?",
+    "a": "Only one: the Moon"
+  },
+  {
+    "q": "What is the biggest planet in the Solar System?",
+    "a": "Jupiter"
+  },
+  {
+    "q": "What is the smallest planet in the Solar System?",
+    "a": "Mercury"
+  }
+]

@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React, { useState, memo }  from 'react';
 import PropTypes from 'prop-types';
 
 import Notification from './Notification';
@@ -45,4 +45,4 @@ Conversation.propTypes = {
   decline: PropTypes.func.isRequired,
 }
 
-export default Conversation;
+export default memo(Conversation);

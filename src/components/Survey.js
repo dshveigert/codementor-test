@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, memo } from 'react';
 
 import data from '../mock/survey.json';
 import Conversation from './Conversation';
@@ -8,13 +8,13 @@ const Survey = () => {
   const [answersList, setAnswersList] = useState([]);
   const [answersCount, setAnswersCount] = useState(0);
 
-  const accept = (q) => {
+  const accept = useCallback((q) => {
     setAnswersList([...answersList, {q, type: 'success'}]);
     setAnswersCount(answersCount + 1);
-  }
-  const decline = (q) => {
+  }, [answersList, answersCount]);
+  const decline = useCallback((q) => {
     setAnswersList([...answersList, {q, type: 'error'}]);
-  }
+  }, [answersList, answersCount]);
 
   return (
       <div className='survey'>
@@ -24,11 +24,10 @@ const Survey = () => {
         </div>
         {answersList.length > 0 && <div className="survey-answers">
           <h3>Answers<span className='survey-counter'><span className='right'>: {answersCount}</span> of {data.length}</span></h3>
-          {answersList && answersList.map(item => <Notification key={item.q} type={item.type} children={<span>{item.q}</span>} />)}
+          {answersList.map(item => <Notification key={item.q} type={item.type} children={<span>{item.q}</span>} />)}
         </div>}
-
       </div>
   );
 }
 
-export default Survey;
+export default memo(Survey);

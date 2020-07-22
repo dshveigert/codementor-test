@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 const Notification = (props) => {
   if (!props.children) return null;
@@ -26,4 +26,4 @@ const Notification = (props) => {
   );
 }
 
-export default Notification;
+export default memo(Notification);

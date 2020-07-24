@@ -1,7 +1,8 @@
-import React, { memo } from 'react';
+import React, { memo, PropsWithChildren } from 'react';
+import { EAnswerType } from '../models/survey';
 
-const Notification = (props) => {
-  if (!props.children) return null;
+const Notification: React.FC<PropsWithChildren<{type: EAnswerType}>> = (props) => {
+  if (!props.children) return <React.Fragment />;
   let classes = 'info';
   if (props.type) {
     switch (props.type) {

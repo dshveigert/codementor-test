@@ -1,22 +1,22 @@
 [
   {
-    "q": "How many planets are in our Solar System?",
-    "a": "Eight: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune"
+    "question": "How many planets are in our Solar System?",
+    "answer": "Eight: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune"
   },
   {
-    "q": "How old is the Sun?",
-    "a": "4.603 billion years"
+    "question": "How old is the Sun?",
+    "answer": "4.603 billion years"
   },
   {
-    "q": "How many natural satellites does Earth have?",
-    "a": "Only one: the Moon"
+    "question": "How many natural satellites does Earth have?",
+    "answer": "Only one: the Moon"
   },
   {
-    "q": "What is the biggest planet in the Solar System?",
-    "a": "Jupiter"
+    "question": "What is the biggest planet in the Solar System?",
+    "answer": "Jupiter"
   },
   {
-    "q": "What is the smallest planet in the Solar System?",
-    "a": "Mercury"
+    "question": "What is the smallest planet in the Solar System?",
+    "answer": "Mercury"
   }
 ]
